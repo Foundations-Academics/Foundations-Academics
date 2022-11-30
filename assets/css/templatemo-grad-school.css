@@ -617,7 +617,11 @@ section.why-us {
 
 }
 
-
+@media screen and (max-width: 799px){
+	.main-img{
+		width:100%
+	}
+}
 /* Coming Soon */
 
 section.coming-soon {
