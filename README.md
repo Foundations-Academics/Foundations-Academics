@@ -1,5 +1,11 @@
 ### Hi there 👋
 
+
+Useful links for web dev
+https://htmldom.dev/detect-the-dark-mode/#:~:text=The%20option%20can%20be%20detected,page%20in%20the%20dark%20mode  
+https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme  
+https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp  
+
 <!--
 **Foundations-Academics/Foundations-Academics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
