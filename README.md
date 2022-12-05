@@ -6,6 +6,15 @@ https://htmldom.dev/detect-the-dark-mode/#:~:text=The%20option%20can%20be%20dete
 https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme  
 https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp  
 
+Colours
+
+Dark blue: #0c1228
+Darker blue: #162239
+
+Purple: #a66cff
+
+
+
 <!--
 **Foundations-Academics/Foundations-Academics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

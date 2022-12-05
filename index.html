@@ -28,20 +28,21 @@ https://templatemo.com/tm-557-grad-school
 -->
   </head>
 
-<body>
+<body onload="document.getElementById('bg-video-darkmode').style.display = 'none'">
 
    
   <!--header-->
-  <header class="main-header clearfix" role="header">
+  <header id="main_header" class="main-header clearfix" role="header">
     <div class="logo">
       <a href="#"><em>Foundations</em> Academics</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
+		<li><a href="#" onclick="toggleDarkMode()">🔆/🌙</a></li>
         <li><a href="#section1">Home</a></li>
         <li class="has-submenu"><a href="#section2">About Us</a>
-          <ul class="sub-menu">
+          <ul id="sub_menu_about" class="sub-menu">
             <li><a href="#section2">Who we are?</a></li>
             <li><a href="#section3">What we do?</a></li>
             <li><a href="#section3">How it works?</a></li>
@@ -49,9 +50,9 @@ https://templatemo.com/tm-557-grad-school
           </ul>
         </li>
         <li><a href="#section4">Courses</a></li>
-        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section5">Video</a></li>
         <li><a href="#section6">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external">External</a></li>
+        <!--<li><a href="https://templatemo.com" class="external">External</a></li>-->
       </ul>
     </nav>
   </header>
@@ -59,14 +60,17 @@ https://templatemo.com/tm-557-grad-school
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop playsinline id="bg-video">
-          <source src="assets/images/course-video.mp4" type="video/mp4" />
+          <source src="assets/images/course-video.mp4" type="video/mp4"/>
+      </video>
+	  <video autoplay muted loop playsinline id="bg-video-darkmode">
+          <source src="assets/images/clouds.mp4" type="video/mp4"/>
       </video>
 
-      <div class="video-overlay header-text">
+      <div id="background_video" class="video-overlay header-text">
           <div class="caption">
               <!--<h6>Bill Presents:</h6>-->
              <!-- <h2><em>Your</em> Classroom</h2>-->
-			  <img class="main-img" src="assets/images/foundations_academics_logo.png" alt="">
+			  <img id="main_logo" class="main-img" src="assets/images/foundations_academics_logo.png" alt="">
               <div class="main-button">
                     <!-- <div class="scroll-to-section"><a href="#section2">Discover more</a></div>-->
               </div>
@@ -81,9 +85,9 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-lg-4 col-12">
           <div class="features-post">
-            <div class="features-content">
+            <div id="feature_1" class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+                <h4 id="feature_1_h4"><i class="fa fa-pencil"></i>All Courses</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -95,9 +99,9 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-lg-4 col-12">
           <div class="features-post second-features">
-            <div class="features-content">
+            <div id="feature_2" class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
+                <h4 id="feature_2_h4"><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -109,9 +113,9 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-lg-4 col-12">
           <div class="features-post third-features">
-            <div class="features-content">
+            <div id="feature_3" class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-book"></i>Real Meeting</h4>
+                <h4 id="feature_3_h4"><i class="fa fa-book"></i>Real Meeting</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
@@ -125,7 +129,7 @@ https://templatemo.com/tm-557-grad-school
     </div>
   </section>
 
-  <section class="section why-us" data-section="section2">
+  <section id="section_2" class="section why-us" data-section="section2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -506,6 +510,7 @@ https://templatemo.com/tm-557-grad-school
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+	<script src="assets/js/darkmode.js"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
