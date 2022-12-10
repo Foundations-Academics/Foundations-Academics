@@ -14,6 +14,15 @@ function toggleDarkMode(){
 	document.getElementById('menu').classList.toggle('main-menu-darkmode-li-a');
 	document.getElementById('sub_menu_about').classList.toggle('sub-menu-darkmode');
 	document.getElementById('section_2').classList.toggle('section-2-darkmode');
+	document.getElementById('top').style.marginBottom = '0px';
+	
+	document.getElementById('why_choose_us').classList.toggle('darkmode-black-text');
+	document.getElementById('why_choose_us').classList.toggle('darkmode-black-border');
+	
+	
+	//document.getElementById('ui-id-1').classList.toggle('darkmode-black-text');
+	//document.getElementById('ui-id-2').classList.toggle('darkmode-black-text');
+	//document.getElementById('ui-id-3').classList.toggle('darkmode-black-text');
 
 	if (dark){		
 		document.getElementById('bg-video').style.display = 'block';

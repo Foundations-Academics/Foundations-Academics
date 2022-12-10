@@ -152,9 +152,8 @@ a.menu-link { display: none; }
 
 @media screen and (max-width: 1050px) {
   .main-header .logo {
-      padding-left: 30px!important;
+      padding-left: 30px !important;
   }
-
   .main-menu {
       padding-right: 30px!important;
   }
@@ -192,6 +191,12 @@ a.menu-link { display: none; }
 .main-header .logo a em {
     font-style: normal;
     color: #a66cff;
+}
+
+@media screen and (max-width: 1366px){
+	.main-header .logo a{
+		  font-size: 100% !important;
+	}
 }
 
 .main-menu {
@@ -448,6 +453,18 @@ section.features .col-4 {
 	color: #000 !important;
 }
 
+.darkmode-black-text{
+	color: #000 !important;
+}
+
+.darkmode-black-background{
+	background-color: #000 !important;
+}
+
+.darkmode-black-border{
+	border: 2px solid #000 !important;
+}
+
 .features-content:hover {
     background-color: #a66cff;
     box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
@@ -540,7 +557,9 @@ section.why-us {
 }
 
 .section-2-darkmode{
+	color: #000 !important;
 	background-color: #a66cff !important;
+	background-image: url(../images/white.png) !important;
 }
 
 #tabs {
@@ -858,6 +877,10 @@ section.courses {
     background-color: #172238;
     padding-bottom: 100px;
     padding: 0px 30px 100px 30px;
+}
+
+.background-darkmode{
+	background-image: url(../images/white.png) !important;
 }
 
 section.courses .item img {
